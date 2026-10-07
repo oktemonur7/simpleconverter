@@ -1,121 +1,12 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Basit Döviz Çevirici — Simple Currency Converter</title>
-<meta name="description" content="Basit Döviz Çevirici: 166 para birimi, internetsiz çalışır, reklamsız, Türkçe ve İngilizce. iPhone ve iPad için.">
-<link rel="canonical" href="https://getsimpleapp.net/converter/">
-<meta property="og:title" content="Basit Döviz Çevirici">
-<meta property="og:description" content="166 para birimi, internetsiz çalışır, reklamsız. iPhone ve iPad için.">
-<meta property="og:url" content="https://getsimpleapp.net/converter/">
-<meta property="og:image" content="https://getsimpleapp.net/converter/icon-1024.png">
-<meta property="og:type" content="website">
-<style>
-  :root { --bg:#f5f5f7; --card:#fff; --txt:#1d1d1f; --sub:#6e6e73; --acc:#007aff; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--txt); line-height:1.6; }
-  .wrap { max-width:860px; margin:0 auto; padding:0 20px 64px; }
-  nav { display:flex; justify-content:space-between; align-items:center; padding:16px 0; }
-  nav .brand { font-weight:700; font-size:17px; }
-  nav .brand img { width:28px; height:28px; border-radius:22%; vertical-align:-7px; margin-right:8px; }
-  .lang button { border:1px solid #d2d2d7; background:var(--card); padding:6px 16px; font-size:14px; cursor:pointer; color:var(--txt); }
-  .lang button:first-child { border-radius:10px 0 0 10px; }
-  .lang button:last-child { border-radius:0 10px 10px 0; }
-  .lang button.on { background:var(--acc); color:#fff; border-color:var(--acc); }
-  .hero { display:flex; gap:32px; align-items:center; padding:40px 0; flex-wrap:wrap; }
-  .hero .txt { flex:1 1 300px; }
-  .hero .shot { flex:1 1 260px; text-align:center; }
-  .hero .shot img { width:100%; max-width:280px; border-radius:28px; box-shadow:0 12px 40px rgba(0,0,0,.18); }
-  .hero img.icon { width:88px; height:88px; border-radius:22%; margin-bottom:12px; }
-  .hero h1 { font-size:32px; line-height:1.2; margin-bottom:8px; }
-  .hero p.tag { color:var(--sub); font-size:17px; margin-bottom:20px; }
-  .store { display:inline-block; background:#000; color:#fff; border-radius:12px; padding:10px 20px; font-size:16px; font-weight:600; }
-  .store small { display:block; font-size:11px; font-weight:400; opacity:.7; }
-  .store:link, .store:visited { color:#fff; text-decoration:none; }
-  .feat { background:var(--card); border-radius:16px; padding:24px; margin-bottom:14px; }
-  .feat h2 { font-size:19px; margin-bottom:6px; }
-  .feat p { color:var(--sub); font-size:15px; }
-  .grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-  @media (max-width:640px){ .grid{grid-template-columns:1fr;} .hero h1{font-size:26px;} }
-  .support { text-align:center; margin-top:28px; color:var(--sub); font-size:15px; }
-  .support a { color:var(--acc); }
-  footer { text-align:center; color:var(--sub); font-size:13px; margin-top:32px; }
-  footer a { color:var(--acc); text-decoration:none; margin:0 8px; }
-  h1[data-en], p[data-en], h2[data-en], .feat p[data-en] { display:none; }
-  html[lang="en"] h1[data-tr], html[lang="en"] p[data-tr], html[lang="en"] h2[data-tr],
-  html[lang="en"] .feat p[data-tr], html[lang="en"] span[data-tr] { display:none; }
-  html[lang="en"] h1[data-en], html[lang="en"] p[data-en], html[lang="en"] h2[data-en] { display:block; }
-  html[lang="en"] .feat p[data-en] { display:block; }
-  html[lang="en"] span[data-en] { display:inline; }
-  span[data-en] { display:none; }
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=/simpleconverter/">
+  <script>window.location.replace("/simpleconverter/");</script>
+  <title>Yönlendiriliyor...</title>
 </head>
 <body>
-<div class="wrap">
-  <nav>
-    <span class="brand"><img src="icon-1024.png" alt=""><span data-tr>Basit Döviz Çevirici</span><span data-en>Simple Currency Converter</span></span>
-    <span class="lang"><button id="b-tr" class="on" onclick="setLang('tr')">TR</button><button id="b-en" onclick="setLang('en')">EN</button></span>
-  </nav>
-
-  <section class="hero">
-    <div class="txt">
-      <img class="icon" src="icon-1024.png" alt="App icon">
-      <h1 data-tr>Basit Döviz Çevirici</h1>
-      <h1 data-en>Simple Currency Converter</h1>
-      <p class="tag" data-tr>166 para birimi. İnternetsiz çalışır. Reklam yok, hesap yok, takip yok.</p>
-      <p class="tag" data-en>166 currencies. Works offline. No ads, no accounts, no tracking.</p>
-      <a class="store" href="#"><small data-tr>Yakında</small><small data-en>Coming soon</small><span data-tr>App Store'dan İndir</span><span data-en>Download on the App Store</span></a>
-    </div>
-    <div class="shot"><img src="screenshot-iphone.png" alt="App screenshot"></div>
-  </section>
-
-  <div class="grid">
-    <div class="feat">
-      <h2 data-tr>İnternetsiz çalışır</h2><h2 data-en>Works offline</h2>
-      <p class="tag" data-tr>Çevirici internet olmadan çalışır. Son yüklenen kurları kullanır, bağlantı gelince günceller.</p>
-      <p class="tag" data-en>The converter works without internet. It uses the last downloaded rates and updates them when you're back online.</p>
-    </div>
-    <div class="feat">
-      <h2 data-tr>166 para birimi</h2><h2 data-en>166 currencies</h2>
-      <p class="tag" data-tr>En çok kullanılan 10 kur en üstte, geri kalanı bayraklı listede. Aramayla anında bulun.</p>
-      <p class="tag" data-en>Top 10 most-used currencies on top, the rest in a flag-based list. Find any of them with search.</p>
-    </div>
-    <div class="feat">
-      <h2 data-tr>Anlık kur bilgisi</h2><h2 data-en>Live rate info</h2>
-      <p class="tag" data-tr>Sonucun altında birim fiyatı görürsünüz: 1 USD = 49,19 TRY gibi. Kurlar her açılışta tazelenir.</p>
-      <p class="tag" data-en>See the unit price under the result, e.g. 1 USD = 49.19 TRY. Rates refresh on every launch.</p>
-    </div>
-    <div class="feat">
-      <h2 data-tr>Sabit klavye</h2><h2 data-en>Built-in keypad</h2>
-      <p class="tag" data-tr>Sistem klavyesi açılmaz; büyük tuşlar, tek dokunuşla silme ve temizleme. Tek elle kullanım için tasarlandı.</p>
-      <p class="tag" data-en>No system keyboard popping up; big keys, one-tap delete and clear. Designed for one-handed use.</p>
-    </div>
-    <div class="feat">
-      <h2 data-tr>Gizlilik öncelikli</h2><h2 data-en>Privacy-first</h2>
-      <p class="tag" data-tr>Hesap yok, reklam yok, analiz yok. Verileriniz cihazınızdan çıkmaz.</p>
-      <p class="tag" data-en>No accounts, no ads, no analytics. Your data never leaves your device.</p>
-    </div>
-    <div class="feat">
-      <h2 data-tr>iPhone ve iPad</h2><h2 data-en>iPhone and iPad</h2>
-      <p class="tag" data-tr>Tamamen native: Swift ve SwiftUI ile yazıldı. Türkçe ve İngilizce arayüz.</p>
-      <p class="tag" data-en>Fully native: built with Swift and SwiftUI. Turkish and English interface.</p>
-    </div>
-  </div>
-
-  <p class="support">
-    <span data-tr>Sorularınız için: <a href="mailto:info@getsimpleapp.net">info@getsimpleapp.net</a></span><span data-en>Questions: <a href="mailto:info@getsimpleapp.net">info@getsimpleapp.net</a></span>
-  </p>
-
-  <footer>
-    <a href="gizlilik.html">Gizlilik Politikası</a> · <a href="privacy.html">Privacy Policy</a> · <a href="kullanim-sartlari.html">Kullanım Şartları</a> · <a href="terms.html">Terms of Use</a>
-    <p style="margin-top:8px;">© 2026 Basit Döviz Çevirici</p>
-  </footer>
-</div>
-<script>
-function setLang(l){document.documentElement.lang=l;
-document.getElementById('b-tr').className=l==='tr'?'on':'';
-document.getElementById('b-en').className=l==='en'?'on':'';}
-</script>
+  <p>Yönlendiriliyorsunuz: <a href="/simpleconverter/">/simpleconverter</a></p>
 </body>
 </html>
