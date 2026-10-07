@@ -50,10 +50,10 @@
   .support a { color:var(--acc); }
   footer { text-align:center; color:var(--sub); font-size:13px; margin-top:32px; }
   footer a { color:var(--acc); text-decoration:none; margin:0 8px; }
-  h1[data-en], p[data-en], h2[data-en], .feat p[data-en] { display:none; }
+  h1[data-en], p[data-en], h2[data-en], div[data-en], .feat p[data-en] { display:none; }
   html[lang="en"] h1[data-tr], html[lang="en"] p[data-tr], html[lang="en"] h2[data-tr],
-  html[lang="en"] .feat p[data-tr], html[lang="en"] span[data-tr] { display:none; }
-  html[lang="en"] h1[data-en], html[lang="en"] p[data-en], html[lang="en"] h2[data-en] { display:block; }
+  html[lang="en"] div[data-tr], html[lang="en"] .feat p[data-tr], html[lang="en"] span[data-tr] { display:none; }
+  html[lang="en"] h1[data-en], html[lang="en"] p[data-en], html[lang="en"] h2[data-en], html[lang="en"] div[data-en] { display:block; }
   html[lang="en"] .feat p[data-en] { display:block; }
   html[lang="en"] span[data-en] { display:inline; }
   span[data-en] { display:none; }
@@ -71,8 +71,14 @@
       <img class="icon" src="icon-1024.png" alt="App icon">
       <h1 data-tr>Basit Döviz Çevirici</h1>
       <h1 data-en>Simple Currency Converter</h1>
-      <p class="tag" data-tr>166 para birimi. İnternetsiz çalışır.<br>Takip yok, hesap yok, karmaşa yok.</p>
-      <p class="tag" data-en>166 currencies. Works offline.<br>No tracking, no accounts, no clutter.</p>
+      <div data-tr>
+        <p class="tag" style="margin-bottom:6px;">166 para birimi. İnternetsiz çalışır.</p>
+        <p class="tag" style="margin-bottom:24px;">Takip yok, hesap yok, karmaşa yok.</p>
+      </div>
+      <div data-en>
+        <p class="tag" style="margin-bottom:6px;">166 currencies. Works offline.</p>
+        <p class="tag" style="margin-bottom:24px;">No tracking, no accounts, no clutter.</p>
+      </div>
       <div class="badge-appstore">
         <svg viewBox="0 0 170 170">
           <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.81-11.96-14.34-5.74-8.71-10.27-18.73-13.58-30.05-3.32-11.32-4.98-22.15-4.98-32.49 0-14.92 3.69-26.88 11.08-35.88 7.39-9 16.59-13.62 27.6-13.85 4.8 0 10.1 1.25 15.9 3.76 5.8 2.5 9.73 3.82 11.8 3.94 1.84 0 5.8-1.34 11.87-4.01 6.07-2.67 11.36-3.88 15.86-3.63 12.03.62 21.6 4.95 28.71 12.98-10.45 6.32-15.55 14.99-15.3 26.01.25 8.7 3.51 16.14 9.78 22.31 6.27 6.17 13.9 9.87 22.89 11.11-2.43 7.54-5.49 15.11-9.18 22.71zM119.22 33.15c0-7.22 2.61-13.93 7.83-20.14 5.22-6.21 11.53-10.18 18.93-11.91.73 2.53 1.1 4.97 1.1 7.32 0 7.24-2.73 14.13-8.2 20.67-5.47 6.54-11.94 10.4-19.41 11.58-.16-2.52-.25-5.02-.25-7.52z"/>
