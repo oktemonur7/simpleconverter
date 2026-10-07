@@ -25,8 +25,13 @@
   .lang button.on { background:var(--acc); color:#fff; border-color:var(--acc); }
   .hero { display:flex; gap:32px; align-items:center; padding:40px 0; flex-wrap:wrap; }
   .hero .txt { flex:1 1 300px; }
-  .hero .shot { flex:1 1 260px; text-align:center; }
-  .hero .shot img { width:100%; max-width:280px; border-radius:28px; box-shadow:0 12px 40px rgba(0,0,0,.18); }
+  .hero .shots-compare { flex:1 1 540px; display:flex; gap:18px; justify-content:center; align-items:flex-end; }
+  .hero .shot-col { display:flex; flex-direction:column; align-items:center; flex:1 1 240px; max-width:260px; }
+  .hero .shot-label { font-size:13px; font-weight:700; margin-bottom:10px; text-align:center; padding:4px 10px; border-radius:8px; line-height:1.3; }
+  .hero .shot-label.bad { color:#d32f2f; background:rgba(211,47,47,.08); }
+  .hero .shot-label.good { color:#1b5e20; background:rgba(46,125,50,.1); }
+  .hero .shot-col img { width:100%; border-radius:26px; box-shadow:0 10px 32px rgba(0,0,0,.15); display:block; }
+  .hero .shot-col.bad img { opacity:.85; filter:grayscale(15%); }
   .hero img.icon { width:88px; height:88px; border-radius:22%; margin-bottom:12px; }
   .hero h1 { font-size:32px; line-height:1.2; margin-bottom:8px; }
   .hero p.tag { color:var(--sub); font-size:17px; margin-bottom:20px; }
@@ -67,7 +72,22 @@
       <p class="tag" data-en>166 currencies. Works offline. No ads, no accounts, no tracking.</p>
       <a class="store" href="#"><small data-tr>Yakında</small><small data-en>Coming soon</small><span data-tr>App Store'dan İndir</span><span data-en>Download on the App Store</span></a>
     </div>
-    <div class="shot"><img src="screenshot-iphone.png" alt="App screenshot"></div>
+    <div class="shots-compare">
+      <div class="shot-col bad">
+        <div class="shot-label bad">
+          <span data-tr>❌ Diğer karmaşık döviz çevirici uygulamalar</span>
+          <span data-en>❌ Other cluttered converter apps</span>
+        </div>
+        <img src="screenshot-other.png" alt="Other complex converter apps">
+      </div>
+      <div class="shot-col good">
+        <div class="shot-label good">
+          <span data-tr>✨ Bizim uygulamamız</span>
+          <span data-en>✨ Our simple app</span>
+        </div>
+        <img src="screenshot-iphone.png" alt="Our Simple Currency Converter app">
+      </div>
+    </div>
   </section>
 
   <div class="grid">
